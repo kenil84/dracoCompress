@@ -156,6 +156,6 @@ app.get('/downloadFile', function (req, res) {
 });
 
 
-app.listen(3000, () => { // listen to the port
-    console.log("listening to port " + 3000);
+app.listen(process.env.PORT || 3000, () => { // listen to the port
+    console.log("listening to port " + process.env.PORT);
 });

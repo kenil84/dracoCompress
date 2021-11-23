@@ -41,7 +41,7 @@ function CreateFilePicker_Model(skuid, id) {
         let fd = new FormData();
         fd.append('uploadTexture', input.files[0]);
         $.ajax({
-            url: '/uploadTextureFiles?skuid=' + skuid, //URL for post request
+            url: '/uploadTextureFiles?skuid=' + skuid + '&&foldername=', //URL for post request
             type: 'POST',  //Type of request
             data: fd, //Data to send
             processData: false, // for sending non-processed data
